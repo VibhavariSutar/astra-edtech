@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astralearn - Interactive Learning Platform</title>
+    <style>
+      /* Loading styles */
+      #root:empty::before {
+        content: "Loading Astralearn...";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.5rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading message will show until React renders -->
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div>Loading Astralearn...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
